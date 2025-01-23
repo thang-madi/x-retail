@@ -1,0 +1,59 @@
+/* css for UOMClassifier */
+
+.uom-classifier-uom-classifier-list {
+    /* width: 100%; */
+    height: 100%;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+.uom-classifier-view {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.uom-classifier-edit {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.uom-classifier-card-group {
+    margin: 2px;
+    width: 98%;
+}
+
+.uom-classifier-card-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/* .uom-classifier-card-button {} */
+
+.uom-classifier-card-button {
+    /* display: none; */
+    border-radius: 20px;
+    border-color: cornflowerblue;
+    background-color: cornflowerblue;
+    color: white;
+}
+
+/* ItemCard */
+.uom-classifier-item-card {
+    /* padding: 10px; */
+    margin: 2px;
+    height: 200px;
+    width: 100%;
+    padding: 0px;
+}
+
+.uom-classifier-item-card .uom-classifier-ant-card-body {
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 8px);
+    align-items: center;
+    margin: 0px;
+}

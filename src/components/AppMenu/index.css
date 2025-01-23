@@ -1,0 +1,22 @@
+/* CSS for components */
+
+/* @media (max-width:576px) {
+    .web-header {
+        display: none;
+    }
+} */
+
+.app-menu {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    padding-top: 30px;
+}
+
+.menu-panel {
+    background-color: var(--menu-background-color);
+}
+
+.menu-panel .ant-menu-item {
+    font-size: 16px;
+}

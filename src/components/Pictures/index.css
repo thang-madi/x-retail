@@ -1,0 +1,70 @@
+/* CSS for components */
+
+.pictures-group {
+    align-items: center;
+    /* border: 2px solid #000; */
+    width: 100%;
+    padding: 10px;
+    position: relative;
+}
+
+.pictures-image {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    margin: 0px;
+}
+
+.left-button {
+    position: absolute;
+    top: 45%;
+    left: 20px;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.right-button {
+    position: absolute;
+    top: 45%;
+    right: 30px;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+.picture-list {
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+    /* padding-bottom: 0px; */
+}
+
+.picture-form-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+.picture-icon img {
+    width: 30px;
+    height: 40px;
+    object-fit: contain;
+    border-radius: 5px;
+}
+
+.picture-icon-active {
+    border: 2px solid blue;
+}
+
+.picture-button {
+    margin-left: 2px;
+    margin-right: 2px;
+    padding: 10px
+}

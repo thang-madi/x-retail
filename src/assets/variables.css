@@ -1,0 +1,18 @@
+/* Biến css toàn cục */
+
+:root {
+    --menu-background-color: darkorange;
+    --header-background-color: blue;
+    --footer-background-color: lightgray;
+    /* --bootom-bar-background-color: #f1f1f1; */
+    --bootom-bar-background-color: rbga(f1, f1, f1, 0);
+
+    --header-height: 60px;
+    --footer-height: 44px;
+    /* --footer-height-android: 88px; */
+    --bottom-bar-height: 48px;
+    --bottom-bar-button-height: 44px;
+
+    --app-sider-width: 200px;
+    --app-sider-breakpoint: 576px;
+}

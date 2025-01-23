@@ -1,0 +1,92 @@
+/* UserProfile */
+.user-profile-edit {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    padding-bottom: 20px;
+}
+
+.user-profile-view {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    padding-bottom: 20px;
+}
+
+.user-profile-connected {
+    display: block;
+}
+
+.user-profile-not-connected {
+    display: none;
+}
+
+.user-profile-connect-user {
+    position: absolute;
+    bottom: var(--footer-height);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.user-profile-connect-user-button {
+    width: 180px;
+    max-width: 200px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.user-profile-connect-user-button-hidden {
+    display: none;
+}
+
+/* ConnectUser */
+.user-connect-user {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+
+.user-connect-user-title {
+    display: flex;
+    justify-content: center;
+}
+
+.user-connect-user-card {
+    display: flex;
+    width: 260px;
+    margin-top: 20px;
+}
+
+.user-connect-user-card .ant-card-body {
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+
+.user-connect-user-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    margin-top: 30px;
+    width: 100%;
+}
+
+.user-connect-user-form-item-input {
+    width: 210px;
+}
+
+.user-connect-user-form-item-input-value {
+    width: 100%;
+}
+
+.user-connect-user-button-group {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}

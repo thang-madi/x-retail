@@ -1,0 +1,22 @@
+/* CSS for components */
+
+.webcam-button-group {
+    display: flex;
+    width: 100%;
+    /* height: 80px; */
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.webcam-capture-button {
+    margin-top: 10px;
+    /* height: 40px; */
+    /* position: absolute; */
+}
+
+.webcam-reweet-button {
+    margin-top: 10px;
+    position: absolute;
+    right: 0px;
+}

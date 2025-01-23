@@ -1,0 +1,76 @@
+/* CSS for components */
+
+.app-header {
+    height: 0px;
+    max-height: 0px;
+    background-color: var(--header-background-color) !important;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: calc(10px + 2vmin);
+    background-color: lightblue;
+}
+
+.app-header-desktop {
+    height: var(--header-height) !important;
+    max-height: var(--header-height) !important;
+}
+
+/* .app-header-mobile {
+    height: 0px !important;
+    max-height: 0px !important;
+} */
+
+/* .app-header-title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+} */
+
+.app-header-menu-icon {
+    background-color: var(--menu-background-color) !important;
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    height: 48px;
+    width: 48px !important;
+    border-radius: 3px;
+    border-color: transparent;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    z-index: 999;
+}
+
+.app-header-menu-icon-hidden {
+    display: none !important;
+}
+
+/* .app-header-menu-icon-fullscreen {
+    background-color: var(--menu-background-color) !important;
+    position: fixed;
+    right: 10px;
+    top: 80px;
+    height: 48px;
+    width: 48px !important;
+    border-radius: 3px;
+    border-color: transparent;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    z-index: 999;
+} */
+
+.app-header-menu-icon-fullscreen {
+    top: 80px !important;
+}
+
+.app-header-menu-icon-image {
+    font-size: 30px !important;
+}
+
+.app-header-menu-drop {
+    background-color: var(--menu-background-color) !important;
+}

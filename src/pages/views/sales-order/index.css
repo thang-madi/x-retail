@@ -1,0 +1,444 @@
+/* css for Order */
+
+/* 
+OrderList
+OrderView
+OrderEdit
+PaymentEdit
+OrderStateTag
+OrderCard
+OrderPrint
+OrderProductRow
+ListSettings 
+*/
+
+/* OrderProductRow */
+
+/* OrderList */
+.views-sales-order-list {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* OrderView */
+.views-sales-order-view {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    transition: all 10s ease;
+}
+
+.views-sales-order-view-divider {
+    border-color: lightgray;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.views-sales-order-view-item {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0px;
+}
+
+.views-sales-order-view-item-title {
+    min-width: 100;
+}
+
+.views-sales-order-view-item-hight-light {
+    color: red;
+}
+
+/* OrderPrint */
+.views-sales-order-print {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* OrderEdit */
+.views-sales-order-edit {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.views-sales-order-edit-header {
+    margin: 5px;
+}
+
+.views-sales-order-edit-title {
+    font-weight: bold;
+}
+
+.views-sales-order-edit-item {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0px;
+}
+
+.views-sales-order-edit-item-customer {
+    width: calc(100% - 50px);
+    max-width: 700px;
+    margin-bottom: 12px;
+}
+
+.views-sales-order-edit-item-visible {
+    display: block;
+}
+
+.views-sales-order-edit-item-hidden {
+    display: none;
+}
+
+.views-sales-order-edit-item-order-state {
+    width: 200px;
+
+}
+
+.views-sales-order-edit-item-label {
+    max-width: 700px;
+    margin-bottom: 12px;
+}
+
+.views-sales-order-edit-divider {
+    border-color: lightgray;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+/* PaymentEdit */
+.views-sales-order-payment {
+    width: 100%;
+    height: 400px;
+    overflow-y: auto;
+    padding: 0px;
+    margin: 0;
+}
+
+.views-sales-order-payment-header {
+    font-weight: bold;
+}
+
+.views-sales-order-payment-divider {
+    border-color: lightgray;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.views-sales-order-payment-amount-group {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.views-sales-order-payment-payment-block {
+    display: flex;
+    flex-direction: column;
+    /* width: 50px; */
+}
+
+.views-sales-order-payment-payment-group {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    /* justify-items: center; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* align-content: center; */
+}
+
+.views-sales-order-payment-payment-title {
+    width: 110px;
+    height: 20px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.views-sales-order-payment-payment-form-item {
+    /* height: px; */
+    margin-bottom: 10px;
+}
+
+.views-sales-order-payment-buttons-group {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    /* padding: 10px; */
+}
+
+.views-sales-order-payment-button-left {
+    width: 50px;
+    margin-left: 10px;
+    height: 32px;
+}
+
+.views-sales-order-payment-form-button {
+    width: 50px;
+    max-width: 100px;
+    margin-left: 10px;
+    height: 32px;
+}
+
+
+/* OrderStateTag */
+.views-sales-order-order-state-tag-editing {
+    color: dimgrey;
+    border-color: dimgrey;
+    margin-right: 0px;
+}
+
+.views-sales-order-order-state-tag-to-prepay {
+    color: white;
+    border-color: red;
+    background-color: red;
+    margin-right: 0px;
+}
+
+.views-sales-order-order-state-tag-preparing {
+    color: red;
+    border-color: red;
+    margin-right: 0px;
+}
+
+.views-sales-order-order-state-tag-transporting {
+    color: blue;
+    border-color: blue;
+    margin-right: 0px;
+}
+
+.views-sales-order-order-state-tag-delivered {
+    color: cornflowerblue;
+    border-color: cornflowerblue;
+    font-style: italic;
+    margin-right: 0px;
+}
+
+.views-sales-order-order-state-tag-completed {
+    color: gray;
+    border-color: gray;
+    text-decoration: line-through;
+    font-style: italic;
+    margin-right: 0px;
+}
+
+/* OrderInventory */
+.views-sales-order-inventory-edit {
+    overflow-y: auto;
+    margin: 0px;
+}
+
+.views-sales-order-inventory-edit-card {
+    margin: 0px;
+    height: 122px;
+}
+
+.views-sales-order-inventory-edit-card .ant-card-body {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 0px !important;
+}
+
+.views-sales-order-inventory-edit-card-picture {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+}
+
+.views-sales-order-inventory-edit-card-picture-image {
+    object-fit: cover,
+}
+
+.views-sales-order-inventory-edit-card-info {
+    padding-left: 15px;
+    padding-right: 20px;
+    flex-grow: 1;
+}
+
+.views-sales-order-inventory-edit-card-info-description {
+    font-weight: bold;
+}
+
+.views-sales-order-inventory-edit-amount {
+    display: flex;
+    justify-content: space-between;
+}
+
+.views-sales-order-inventory-edit-quantity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3px;
+}
+
+@media (max-width:575px) {
+    .views-sales-order-inventory-edit-quantity-title-long {
+        display: none;
+    }
+}
+
+@media (min-width:576px) {
+    .views-sales-order-inventory-edit-quantity-title-short {
+        display: none;
+        margin-left: 6px;
+    }
+}
+
+.views-sales-order-inventory-edit-quantity-title-long {
+    min-width: 1px;
+    margin-right: 5px;
+}
+
+.views-sales-order-inventory-edit-quantity-title-short {
+    min-width: 1px;
+    margin-right: 5px;
+}
+
+.views-sales-order-inventory-edit-quantity-group {
+    display: flex;
+}
+
+.views-sales-order-inventory-edit-uom {
+    width: 100px;
+    margin-bottom: 0px;
+}
+
+.views-sales-order-inventory-edit-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3px;
+}
+
+/* SupplierInvoiceInventoryView */
+.views-sales-order-inventory-view {
+    overflow-y: auto;
+    margin: 0px;
+    height: 100px;
+}
+
+.views-sales-order-inventory-view-card {
+    display: flex;
+    margin: 0px;
+    height: 122px;
+}
+
+.views-sales-order-inventory-view-card .ant-card-body {
+    padding: 0px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 0px !important;
+}
+
+.views-sales-order-inventory-view-card-picture {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.views-sales-order-inventory-view-card-picture-image {
+    object-fit: cover,
+}
+
+.views-sales-order-inventory-view-card-info {
+    padding-left: 15px;
+    padding-right: 20px;
+    flex-grow: 1;
+}
+
+.views-sales-order-inventory-view-card-info-description {
+    font-weight: bold;
+}
+
+.views-sales-order-inventory-view-amount {
+    display: flex;
+    justify-content: space-between;
+}
+
+.views-sales-order-inventory-view-quantity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3px;
+}
+
+@media (max-width:575px) {
+    .views-sales-order-inventory-view-quantity-title-long {
+        display: none;
+    }
+}
+
+@media (min-width:576px) {
+    .views-sales-order-inventory-view-quantity-title-short {
+        display: none;
+        margin-left: 6px;
+    }
+}
+
+.views-sales-order-inventory-view-quantity-title-long {
+    min-width: 1px;
+    margin-right: 5px;
+}
+
+.views-sales-order-inventory-view-quantity-title-short {
+    min-width: 1px;
+    margin-right: 5px;
+}
+
+.views-sales-order-inventory-view-quantity-group {
+    display: flex;
+}
+
+.product-row-edit-uom {
+    width: 100px;
+    margin-bottom: 0px;
+}
+
+.views-sales-order-inventory-view-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3px;
+}
+
+/* OrderCard */
+.views-sales-order-card {
+    display: flex;
+    margin: 5px;
+    padding: 20px;
+    /* align-items: start; */
+    /* flex-direction: column; */
+}
+
+.views-sales-order-card .ant-card-body {
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 8px);
+    align-items: start;
+    margin: 0px;
+}
+
+.views-sales-order-card-divider {
+    border-color: lightgray;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.views-sales-order-card-title {
+    font-weight: bold;
+}
+
+.views-sales-order-card-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}

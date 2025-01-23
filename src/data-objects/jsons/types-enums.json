@@ -1,0 +1,68 @@
+{
+    "XTSGender": {
+        "Male": {
+            "_type": "XTSObjectId",
+            "dataType": "XTSGender",
+            "id": "Male",
+            "presentation": "Male"
+        },
+        "Female": {
+            "_type": "XTSObjectId",
+            "dataType": "XTSGender",
+            "id": "Female",
+            "presentation": "Female"
+        },
+        "Unknown": {
+            "_type": "XTSObjectId",
+            "dataType": "XTSGender",
+            "id": "Unknown",
+            "presentation": "Unknown"
+        }
+    },
+    "XTSPaymentType": {
+        "PettyCash": {
+            "_type": "XTSObjectId",
+            "dataType": "XTSPaymentType",
+            "id": "PettyCash",
+            "presentation": "PettyCash"
+        },
+        "BankTransfer": {
+            "_type": "XTSObjectId",
+            "dataType": "XTSPaymentType",
+            "id": "BankTransfer",
+            "presentation": "BankTransfer"
+        },
+        "Debt": {
+            "_type": "XTSObjectId",
+            "dataType": "XTSPaymentType",
+            "id": "Debt",
+            "presentation": "Debt"
+        }
+    },
+    "XTSCounterpartyKind": {
+        "LegalEntity": {
+            "_type": "XTSObjectId",
+            "dataType": "XTSCounterpartyKind",
+            "id": "LegalEntity",
+            "presentation": "Doanh nghiệp"
+        },
+        "IndividualEntrepreneur": {
+            "_type": "XTSObjectId",
+            "dataType": "XTSCounterpartyKind",
+            "id": "IndividualEntrepreneur",
+            "presentation": "Cá nhân kinh doanh"
+        },
+        "Individual": {
+            "_type": "XTSObjectId",
+            "dataType": "XTSCounterpartyKind",
+            "id": "Individual",
+            "presentation": "Cá nhân"
+        },
+        "StateAuthority": {
+            "_type": "XTSObjectId",
+            "dataType": "XTSCounterpartyKind",
+            "id": "StateAuthority",
+            "presentation": "Cơ quan chức năng"
+        }
+    }
+}

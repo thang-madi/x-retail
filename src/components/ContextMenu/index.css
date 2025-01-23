@@ -1,0 +1,84 @@
+/* CSS for components */
+
+.top-bar {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    height: var(--header-height);
+    top: 100px;
+    /* background-color: #f1f1f1; */
+    /* padding: 10px; */
+    border-top: 1px solid #ccc;
+    z-index: 99;
+}
+
+.bottom-bar {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    left: 0px;
+    right: 0px;
+    height: var(--bottom-bar-height);
+    bottom: 0px;
+    background-color: var(--bootom-bar-background-color);
+    gap: 3px;
+    /* border-top: 1px solid #ccc; */
+    /* z-index: 9999; */
+}
+
+.button-bar-left {
+    display: flex;
+    gap: 3px;
+    padding-left: 5px;
+}
+
+.button-bar-right {
+    display: flex;
+    gap: 3px;
+    padding-right: 5px;
+}
+
+.context-menu-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: var(--bottom-bar-button-height);
+    gap: 5px;
+    margin: 0px;
+    border-radius: 24px;
+    background-color: rgba(64, 64, 128, 0.5);
+    border: 0px;
+}
+
+.context-menu-button:active,
+.context-menu-button:hover {
+    background-color: rgba(64, 64, 64, 0.5) !important;
+}
+
+.context-menu-button-title {
+    color: white;
+}
+
+.context-menu-button-title:empty {
+    display: none;
+}
+
+.context-menu-button-refresh {
+    position: absolute;
+    right: 10px;
+    height: var(--footer-height);
+    margin: 0px;
+    border-radius: 22px;
+    background-color: rgba(64, 64, 128, 0.5);
+    border: 0px;
+}
+
+/* .context-menu-button-refresh:active {
+    background-color: (64, 64, 64, 0.5) !important;
+} */
+
+.context-menu-button-icon {
+    color: whitesmoke
+}

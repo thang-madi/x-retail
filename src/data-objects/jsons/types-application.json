@@ -1,0 +1,944 @@
+{
+    "XTSProduct": {
+        "_type": {
+            "name": "_type",
+            "localName": "_type",
+            "type": "String",
+            "count": 1,
+            "ref": "XTSProduct"
+        },
+        "objectId": {
+            "name": "objectId",
+            "localName": "objectId",
+            "type": "XTSObjectId",
+            "count": 1,
+            "ref": "XTSProduct"
+        },
+        "description": {
+            "name": "description",
+            "localName": "description",
+            "type": "String",
+            "count": 1
+        },
+        "descriptionFull": {
+            "name": "descriptionFull",
+            "localName": "descriptionFull",
+            "type": "String",
+            "count": 1
+        },
+        "sku": {
+            "name": "sku",
+            "localName": "sku",
+            "type": "String",
+            "count": 0
+        },
+        "comment": {
+            "name": "comment",
+            "localName": "comment",
+            "type": "String",
+            "count": 0
+        },
+        "productType": {
+            "name": "productType",
+            "localName": "productType",
+            "type": "XTSObjectId",
+            "count": 1,
+            "ref": "XTSProductType"
+        },
+        "productCategory": {
+            "name": "productCategory",
+            "localName": "productCategory",
+            "type": "XTSObjectId",
+            "count": 1,
+            "ref": "XTSProductCategory"
+        },
+        "measurementUnit": {
+            "name": "measurementUnit",
+            "localName": "measurementUnit",
+            "type": "XTSObjectId",
+            "count": 1,
+            "ref": "XTSUOMClassifier"
+        },
+        "picture": {
+            "name": "picture",
+            "localName": "picture",
+            "type": "XTSObjectId",
+            "count": 0,
+            "ref": "XTSProductAttachedFile"
+        },
+        "_price": {
+            "name": "_price",
+            "localName": "_price",
+            "type": "Number",
+            "count": 0
+        },
+        "_vatRate": {
+            "name": "_vatRate",
+            "localName": "_vatRate",
+            "type": "XTSObjectId",
+            "count": 0
+        },
+        "_vatRateRate": {
+            "name": "_vatRateRate",
+            "localName": "_vatRateRate",
+            "type": "Number",
+            "count": 0
+        },
+        "_uoms": {
+            "name": "_uoms",
+            "localName": "_uoms",
+            "type": "XTSProductUOMRow",
+            "count": -1
+        },
+        "_characteristics": {
+            "name": "_characteristics",
+            "localName": "_characteristics",
+            "type": "XTSObjectId",
+            "count": -1,
+            "ref": "XTSProductCharacteristic"
+        },
+        "_prices": {
+            "name": "_prices",
+            "localName": "_prices",
+            "type": "Number",
+            "count": 0
+        }
+    },
+    "XTSProductUOMRow": {
+        "_type": {
+            "name": "_type",
+            "localName": "_type",
+            "type": "String",
+            "count": 1,
+            "ref": "XTSProductUOMRow"
+        },
+        "uom": {
+            "name": "uom",
+            "localName": "uom",
+            "type": "XTSObjectId",
+            "count": 1,
+            "ref": [
+                "XTSUOMClassifier",
+                "XTSMeasurementUnit"
+            ]
+        },
+        "coefficient": {
+            "name": "coefficient",
+            "localName": "coefficient",
+            "type": "Number",
+            "count": 0
+        }
+    },
+    "XTSProductCharacteristic": {
+        "_type": {
+            "name": "_type",
+            "localName": "_type",
+            "type": "String",
+            "count": 1,
+            "ref": "XTSProductCharacteristic"
+        },
+        "objectId": {
+            "name": "objectId",
+            "localName": "objectId",
+            "type": "XTSObjectId",
+            "count": 1
+        },
+        "description": {
+            "name": "description",
+            "localName": "description",
+            "type": "String",
+            "count": 1
+        },
+        "_price": {
+            "name": "_price",
+            "localName": "_price",
+            "type": "XTSPriceRow",
+            "count": -1
+        }
+    },
+    "XTSPriceRow": {
+        "_type": {
+            "name": "_type",
+            "localName": "_type",
+            "type": "String",
+            "count": 1,
+            "ref": "XTSPriceRow"
+        },
+        "product": {
+            "name": "product",
+            "localName": "product",
+            "type": "XTSObjectId",
+            "count": 1,
+            "ref": "XTSProduct"
+        },
+        "characteristic": {
+            "name": "characteristic",
+            "localName": "characteristic",
+            "type": "XTSObjectId",
+            "count": 1,
+            "ref": "XTSProductCharacteristic"
+        },
+        "priceKind": {
+            "name": "priceKind",
+            "localName": "priceKind",
+            "type": "XTSObjectId",
+            "count": 1,
+            "ref": "XTSPriceKind"
+        },
+        "measurementUnit": {
+            "name": "measurementUnit",
+            "localName": "measurementUnit",
+            "type": "XTSObjectId",
+            "count": 1,
+            "ref": [
+                "XTSUOMClassifier",
+                "XTSMeasurementUnit"
+            ]
+        },
+        "price": {
+            "name": "price",
+            "localName": "price",
+            "type": "Number",
+            "count": 1
+        }
+    },
+    "XTSCounterparty": {
+        "_type": {
+            "name": "_type",
+            "localName": "_type",
+            "type": "String",
+            "count": 1,
+            "ref": "XTSCounterparty"
+        },
+        "objectId": {
+            "name": "objectId",
+            "localName": "objectId",
+            "type": "XTSObjectId",
+            "count": 1
+        },
+        "code": {
+            "name": "code",
+            "localName": "code",
+            "type": "String",
+            "count": 1
+        },
+        "description": {
+            "name": "description",
+            "localName": "description",
+            "type": "String",
+            "count": 1
+        },
+        "descriptionFull": {
+            "name": "descriptionFull",
+            "localName": "descriptionFull",
+            "type": "String",
+            "count": 1
+        },
+        "counterpartyKind": {
+            "name": "counterpartyKind",
+            "localName": "counterpartyKind",
+            "type": "XTSObjectId",
+            "count": 1,
+            "ref": "XTSCounterpartyKind"
+        },
+        "dateOfBirth": {
+            "name": "dateOfBirth",
+            "localName": "dateOfBirth",
+            "type": "Date",
+            "count": 1
+        },
+        "comment": {
+            "name": "comment",
+            "localName": "comment",
+            "type": "String",
+            "count": 1
+        },
+        "taxIdentifactionNumber": {
+            "name": "taxIdentifactionNumber",
+            "localName": "taxIdentifactionNumber",
+            "type": "String",
+            "count": 1
+        },
+        "invalid": {
+            "name": "invalid",
+            "localName": "invalid",
+            "type": "Boolean",
+            "count": 1
+        },
+        "mainInfo": {
+            "name": "mainInfo",
+            "localName": "mainInfo",
+            "type": "String",
+            "count": 1
+        },
+        "customer": {
+            "name": "customer",
+            "localName": "customer",
+            "type": "Boolean",
+            "count": 1
+        },
+        "gender": {
+            "name": "gender",
+            "localName": "gender",
+            "type": "XTSObjectId",
+            "count": 1,
+            "ref": "XTSGender"
+        },
+        "vendor": {
+            "name": "vendor",
+            "localName": "vendor",
+            "type": "Boolean",
+            "count": 1
+        },
+        "otherRelations": {
+            "name": "otherRelations",
+            "localName": "otherRelations",
+            "type": "Boolean",
+            "count": 1
+        },
+        "phone": {
+            "name": "phone",
+            "localName": "phone",
+            "type": "String",
+            "count": 0
+        },
+        "address": {
+            "name": "address",
+            "localName": "address",
+            "type": "String",
+            "count": 0
+        },
+        "email": {
+            "name": "email",
+            "localName": "email",
+            "type": "String",
+            "count": 0
+        }
+    },
+    "XTSOrder": {
+        "_type": {
+            "name": "_type",
+            "localName": "_type",
+            "type": "String",
+            "count": 1,
+            "ref": "XTSOrder"
+        },
+        "objectId": {
+            "name": "objectId",
+            "localName": "objectId",
+            "type": "XTSObjectId",
+            "count": 1,
+            "ref": "XTSOrder"
+        },
+        "date": {
+            "name": "date",
+            "localName": "date",
+            "type": "DateTime",
+            "count": 1
+        },
+        "number": {
+            "name": "number",
+            "localName": "number",
+            "type": "String",
+            "count": 1
+        },
+        "customer": {
+            "name": "customer",
+            "localName": "customer",
+            "type": "XTSObjectId",
+            "count": 1,
+            "ref": "XTSCounterparty"
+        },
+        "documentCurrency": {
+            "name": "documentCurrency",
+            "localName": "documentCurrency",
+            "type": "XTSObjectId",
+            "count": 1,
+            "ref": "XTSCounterparty"
+        },
+        "vatTaxation": {
+            "name": "vatTaxation",
+            "localName": "vatTaxation",
+            "type": "XTSObjectId",
+            "count": 1,
+            "ref": "XTSVATTaxationType"
+        },
+        "rate": {
+            "name": "rate",
+            "localName": "rate",
+            "type": "Number",
+            "count": 1,
+            "ref": 1
+        },
+        "multiplicity": {
+            "name": "multiplicity",
+            "localName": "multiplicity",
+            "type": "Number",
+            "count": 1,
+            "ref": 1
+        },
+        "documentAmount": {
+            "name": "documentAmount",
+            "localName": "documentAmount",
+            "type": "Number",
+            "count": 1
+        },
+        "company": {
+            "name": "company",
+            "localName": "company",
+            "type": "XTSObjectId",
+            "count": 1,
+            "ref": "XTSCompany"
+        },
+        "comment": {
+            "name": "comment",
+            "localName": "comment",
+            "type": "String",
+            "count": 0
+        },
+        "author": {
+            "name": "author",
+            "localName": "author",
+            "type": "XTSObjectId",
+            "count": 0,
+            "ref": "XTSUser"
+        },
+        "confirmed": {
+            "name": "confirmed",
+            "localName": "confirmed",
+            "type": "Boolean",
+            "count": 0
+        },
+        "shipmentDate": {
+            "name": "shipmentDate",
+            "localName": "shipmentDate",
+            "type": "Date",
+            "count": 1
+        },
+        "cash": {
+            "name": "cash",
+            "localName": "cash",
+            "type": "Number",
+            "count": 0
+        },
+        "bankTransfer": {
+            "name": "bankTransfer",
+            "localName": "bankTransfer",
+            "type": "Number",
+            "count": 0
+        },
+        "postPayment": {
+            "name": "postPayment",
+            "localName": "postPayment",
+            "type": "Number",
+            "count": 0
+        },
+        "paymentNote": {
+            "name": "paymentNote",
+            "localName": "paymentNote",
+            "type": "String",
+            "count": 0
+        },
+        "inventory": {
+            "name": "inventory",
+            "localName": "inventory",
+            "type": "XTSOrderProductRow",
+            "count": -1
+        },
+        "externalAccount": {
+            "name": "externalAccount",
+            "localName": "externalAccount",
+            "type": "XTSObjectId",
+            "count": 0,
+            "ref": "XTSExternalAccount"
+        }
+    },
+    "XTSOrderProductRow": {
+        "_type": {
+            "name": "_type",
+            "localName": "_type",
+            "type": "String",
+            "count": 1,
+            "ref": "XTSOrderProductRow"
+        },
+        "_lineNumber": {
+            "name": "_lineNumber",
+            "localName": "_lineNumber",
+            "type": "Number",
+            "count": 1
+        },
+        "product": {
+            "name": "product",
+            "localName": "product",
+            "type": "XTSObjectId",
+            "count": 1,
+            "ref": "XTSProduct"
+        },
+        "characteristic": {
+            "name": "characteristic",
+            "localName": "characteristic",
+            "type": "XTSObjectId",
+            "count": 0,
+            "ref": "XTSProductCharacteristic"
+        },
+        "vatRate": {
+            "name": "vatRate",
+            "localName": "vatRate",
+            "type": "XTSObjectId",
+            "count": 0,
+            "ref": "XTSVATRate"
+        },
+        "quantity": {
+            "name": "quantity",
+            "localName": "quantity",
+            "type": "Number",
+            "count": 1
+        },
+        "uom": {
+            "name": "uom",
+            "localName": "uom",
+            "type": "XTSObjectId",
+            "count": 1,
+            "ref": [
+                "XTSUOMClassifier",
+                "XTSMeasurementUnit"
+            ]
+        },
+        "price": {
+            "name": "price",
+            "localName": "price",
+            "type": "Number",
+            "count": 1
+        },
+        "amount": {
+            "name": "amount",
+            "localName": "amount",
+            "type": "Number",
+            "count": 1
+        },
+        "automaticDiscountAmount": {
+            "name": "automaticDiscountAmount",
+            "localName": "automaticDiscountAmount",
+            "type": "Number",
+            "count": 1
+        },
+        "discountsMarkupsAmount": {
+            "name": "discountsMarkupsAmount",
+            "localName": "discountsMarkupsAmount",
+            "type": "Number",
+            "count": 1
+        },
+        "vatAmount": {
+            "name": "vatAmount",
+            "localName": "vatAmount",
+            "type": "Number",
+            "count": 1
+        },
+        "total": {
+            "name": "total",
+            "localName": "total",
+            "type": "Number",
+            "count": 1
+        },
+        "_coefficient": {
+            "name": "_coefficient",
+            "localName": "_coefficient",
+            "type": "Number",
+            "count": 1
+        },
+        "_price": {
+            "name": "_price",
+            "localName": "_price",
+            "type": "Number",
+            "count": 1
+        },
+        "_vatRateRate": {
+            "name": "_vatRateRate",
+            "localName": "_vatRateRate",
+            "type": "Number",
+            "count": 1
+        },
+        "_picture": {
+            "name": "_picture",
+            "localName": "_picture",
+            "type": "XTSObjectId",
+            "count": 1
+        }
+    },
+    "XTSUOMClassifier": {
+        "_type": {
+            "name": "_type",
+            "localName": "_type",
+            "type": "String",
+            "count": 1,
+            "ref": "XTSUOMClassifier"
+        },
+        "objectId": {
+            "name": "objectId",
+            "localName": "objectId",
+            "type": "XTSObjectId",
+            "count": 1
+        },
+        "description": {
+            "name": "description",
+            "localName": "description",
+            "type": "String",
+            "count": 1
+        },
+        "code": {
+            "name": "code",
+            "localName": "code",
+            "type": "String",
+            "count": 0
+        }
+    },
+    "XTSMeasurementUnit": {
+        "_type": {
+            "name": "_type",
+            "localName": "_type",
+            "type": "String",
+            "count": 1,
+            "ref": "XTSMeasurementUnit"
+        },
+        "objectId": {
+            "name": "objectId",
+            "localName": "objectId",
+            "type": "XTSObjectId",
+            "count": 1
+        },
+        "description": {
+            "name": "description",
+            "localName": "description",
+            "type": "String",
+            "count": 1
+        },
+        "coefficient": {
+            "name": "coefficient",
+            "localName": "coefficient",
+            "type": "String",
+            "count": 0
+        }
+    },
+    "XTSCompany": {
+        "_type": {
+            "name": "_type",
+            "localName": "_type",
+            "type": "String",
+            "count": 1,
+            "ref": "XTSCompany"
+        },
+        "objectId": {
+            "name": "objectId",
+            "localName": "objectId",
+            "type": "XTSObjectId",
+            "count": 1
+        },
+        "description": {
+            "name": "description",
+            "localName": "description",
+            "type": "String",
+            "count": 1
+        },
+        "phone": {
+            "name": "phone",
+            "localName": "phone",
+            "type": "String",
+            "count": 0
+        },
+        "address": {
+            "name": "address",
+            "localName": "address",
+            "type": "String",
+            "count": 0
+        },
+        "email": {
+            "name": "email",
+            "localName": "email",
+            "type": "String",
+            "count": 0
+        }
+    },
+    "XTSIndividual": {
+        "_type": {
+            "name": "_type",
+            "localName": "_type",
+            "type": "String",
+            "count": 1,
+            "ref": "XTSIndividual"
+        },
+        "objectId": {
+            "name": "objectId",
+            "localName": "objectId",
+            "type": "XTSObjectId",
+            "count": 1,
+            "ref": "XTSIndividual"
+        },
+        "description": {
+            "name": "description",
+            "localName": "description",
+            "type": "String",
+            "count": 1
+        },
+        "fullName": {
+            "name": "fullName",
+            "localName": "fullName",
+            "type": "String",
+            "count": 1
+        },
+        "dateOfBirth": {
+            "name": "dateOfBirth",
+            "localName": "dateOfBirth",
+            "type": "Date",
+            "count": 0
+        },
+        "phone": {
+            "name": "phone",
+            "localName": "phone",
+            "type": "String",
+            "count": 0
+        },
+        "email": {
+            "name": "email",
+            "localName": "email",
+            "type": "String",
+            "count": 0
+        },
+        "address": {
+            "name": "address",
+            "localName": "address",
+            "type": "String",
+            "count": 0
+        }
+    },
+    "XTSCart": {
+        "_type": {
+            "name": "_type",
+            "localName": "_type",
+            "type": "String",
+            "count": 1,
+            "ref": "XTSCart"
+        },
+        "recordKey": {
+            "name": "recordKey",
+            "localName": "recordKey",
+            "type": "XTSRecordKey",
+            "count": 1,
+            "ref": "XTSCart"
+        },
+        "date": {
+            "name": "date",
+            "localName": "date",
+            "type": "DateTime",
+            "count": 1
+        },
+        "externalAccount": {
+            "name": "externalAccount",
+            "localName": "externalAccount",
+            "type": "XTSObjectId",
+            "count": 0,
+            "ref": "XTSExternalAccount"
+        },
+        "company": {
+            "name": "company",
+            "localName": "company",
+            "type": "XTSObjectId",
+            "count": 1,
+            "ref": "XTSCompany"
+        },
+        "customer": {
+            "name": "customer",
+            "localName": "customer",
+            "type": "XTSObjectId",
+            "count": 1,
+            "ref": "XTSCart"
+        },
+        "product": {
+            "name": "product",
+            "localName": "product",
+            "type": "XTSObjectId",
+            "count": 1,
+            "ref": "XTSProduct"
+        },
+        "characteristic": {
+            "name": "characteristic",
+            "localName": "characteristic",
+            "type": "XTSObjectId",
+            "count": 1,
+            "ref": "XTSProductCharacteristic"
+        },
+        "uom": {
+            "name": "uom",
+            "localName": "uom",
+            "type": "XTSObjectId",
+            "count": 0,
+            "ref": [
+                "XTSUOMClassifier",
+                "XTSMeasurementUnit"
+            ]
+        },
+        "coefficient": {
+            "name": "coefficient",
+            "localName": "coefficient",
+            "type": "Number",
+            "count": 0
+        },
+        "quantity": {
+            "name": "quantity",
+            "localName": "quantity",
+            "type": "Number",
+            "count": 0
+        },
+        "price": {
+            "name": "price",
+            "localName": "price",
+            "type": "Number",
+            "count": 0
+        },
+        "amount": {
+            "name": "amount",
+            "localName": "amount",
+            "type": "Number",
+            "count": 0
+        },
+        "total": {
+            "name": "total",
+            "localName": "total",
+            "type": "Number",
+            "count": 0
+        },
+        "selected": {
+            "name": "selected",
+            "localName": "selected",
+            "type": "Boolean",
+            "count": 0
+        },
+        "_picture": {
+            "name": "_picture",
+            "localName": "_picture",
+            "type": "XTSObjectId",
+            "count": 0
+        }
+    },
+    "XTSUserProfile": {
+        "_type": {
+            "name": "_type",
+            "localName": "_type",
+            "type": "String",
+            "count": 1,
+            "ref": "XTSUserProfile"
+        },
+        "objectId": {
+            "name": "objectId",
+            "localName": "objectId",
+            "type": "XTSObjectId",
+            "count": 1,
+            "ref": "XTSUser"
+        },
+        "description": {
+            "name": "description",
+            "localName": "description",
+            "type": "String",
+            "count": 1
+        },
+        "fullName": {
+            "name": "fullName",
+            "localName": "fullName",
+            "type": "String",
+            "count": 1
+        },
+        "dateOfBirth": {
+            "name": "dateOfBirth",
+            "localName": "dateOfBirth",
+            "type": "Date",
+            "count": 0
+        },
+        "phone": {
+            "name": "phone",
+            "localName": "phone",
+            "type": "String",
+            "count": 0
+        },
+        "email": {
+            "name": "email",
+            "localName": "email",
+            "type": "String",
+            "count": 0
+        },
+        "address": {
+            "name": "address",
+            "localName": "address",
+            "type": "String",
+            "count": 0
+        },
+        "company": {
+            "name": "company",
+            "localName": "company",
+            "type": "XTSObjectId",
+            "count": 1,
+            "ref": "XTSCompany"
+        },
+        "customer": {
+            "name": "customer",
+            "localName": "customer",
+            "type": "XTSObjectId",
+            "count": 0,
+            "ref": "XTSCounterparty"
+        },
+        "supplier": {
+            "name": "supplier",
+            "localName": "supplier",
+            "type": "XTSObjectId",
+            "count": 1,
+            "ref": "XTSCounterparty"
+        },
+        "shipper": {
+            "name": "shipper",
+            "localName": "shipper",
+            "type": "XTSObjectId",
+            "count": 0,
+            "ref": "XTSCounterparty"
+        }
+    },
+    "XTSExternalAccount": {
+        "_type": {
+            "name": "_type",
+            "localName": "_type",
+            "type": "String",
+            "count": 1,
+            "ref": "XTSExternalAccount"
+        },
+        "objectId": {
+            "name": "objectId",
+            "localName": "objectId",
+            "type": "XTSObjectId",
+            "count": 1,
+            "ref": "XTSExternalAccount"
+        },
+        "description": {
+            "name": "description",
+            "localName": "description",
+            "type": "String",
+            "count": 1
+        },
+        "customer": {
+            "name": "customer",
+            "localName": "customer",
+            "type": "XTSObjectId",
+            "count": 0,
+            "ref": "XTSCounterparty"
+        },
+        "user": {
+            "name": "user",
+            "localName": "user",
+            "type": "XTSObjectId",
+            "count": 1,
+            "ref": "XTSUser"
+        },
+        "id": {
+            "name": "id",
+            "localName": "id",
+            "type": "String",
+            "count": 0
+        }
+    }
+}

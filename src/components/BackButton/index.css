@@ -1,0 +1,190 @@
+/* CSS for components */
+
+/* AppHeader */
+/* @media (max-width:576px) {
+    .web-header {
+        display: none;
+    }
+} */
+
+/* @media (min-width:576px) {
+    .app-menu-icon {
+        display: none;
+    }
+} */
+
+@media (max-height:750px) {
+    .app-footer {
+        display: none;
+    }
+}
+
+.app-header {
+    /* background-color: #282c34; */
+    /* min-height: 50vh; */
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.app-header-title {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0;
+}
+
+.menu-icon {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    height: 48px;
+    /* width: 48px; */
+    border-radius: 3px;
+    border-color: transparent;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    z-index: 999;
+}
+
+/* AppFooter */
+.app-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    /* font-weight: bold; */
+}
+
+/* ContextMenu */
+.top-bar {
+    /* position: -webkit-sticky; */
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+    top: 0;
+    /* background-color: #f1f1f1; */
+    /* padding: 10px; */
+    border-top: 1px solid #ccc;
+    z-index: 9999;
+}
+
+.bottom-bar {
+    position: -webkit-sticky;
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    left: 0px;
+    right: 0px;
+    bottom: 0;
+    background-color: #f1f1f1;
+    padding: 5px;
+    /* border-top: 1px solid #ccc; */
+    /* z-index: 9999; */
+}
+
+.context-menu-button {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    /* width: 100px; */
+    height: 32px;
+    gap: 10px;
+    margin: 1px;
+    /* padding-left: 50px; */
+    /* white-space: nowrap; */
+}
+
+.context-menu-button:hover {
+    background-color: mediumaquamarine;
+}
+
+.context-menu-button:active {
+    background-color: mediumaquamarine;
+}
+
+.context-menu-button-title {
+    /* width: 80px; */
+    /* align-items: center; */
+    /* text-align: center; */
+    /* flex-grow: 1; */
+    /* margin: 50; */
+    /* padding-left: 8; */
+    color: maroon;
+    /* border: '1px solid #888'; */
+}
+
+.context-menu-button-title:hover {
+    color: burlywood;
+}
+
+.context-menu-button-title:empty {
+    display: none;
+}
+
+/* Virtualized */
+.virtual-grid {
+    position: relative;
+    height: 100%;
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ///////////////////////////////////////////// */
+/* FormItems */
+
+/* List search */
+.list-item-search {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    top: 0px;
+    right: 10px;
+    width: 300px;
+    margin-top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 990;
+    /* border: 2px solid red; */
+}
+
+.list-input-search {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid blue; */
+    /* color: rgb(127, 236, 255); */
+}
+
+/* Value choice */
+/* .form-item-value-choice {
+    outline: none;
+    border-color: #fffff0;
+} */
+
+/* .form-item-value-choice:focus {
+    outline: none;
+    border-color: #000000;
+} */
+
+/* .form-item-value-choice .ant-form-item-control-input-content:focus {
+    outline: none;
+    border-color: #000000;
+} */
+
+/* .form-item-value-choice .ant-input-outlined:focus {
+    border-color: #000000;
+    box-shadow: none !important;
+} */
+
+
+/* .form-item-value-choice .ant-input:focus {
+    border-color: #000000;
+    box-shadow: none !important;
+} */

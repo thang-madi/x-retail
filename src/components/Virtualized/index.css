@@ -1,0 +1,27 @@
+/* CSS for components */
+
+.virtual-grid {
+    position: relative;
+    height: 100%;
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .virtual-grid-choice-list-fullscreen-android {
+    position: relative;
+    height: calc(100% - var(--footer-height));
+    padding: 0px;
+    align-items: center;
+    justify-content: center;
+} */
+
+.virtual-list {
+    position: relative;
+    width: 100%;
+}
+
+.virtual-list-choice-list {
+    width: 100%;
+    height: calc(100% - var(--footer-height));
+}

@@ -1,0 +1,132 @@
+/* CSS for components */
+
+/* list-settings */
+.list-settings {
+    position: absolute;
+    flex-direction: column;
+    display: inline-flex;
+    justify-content: flex-end;
+    justify-items: center;
+    top: 10px;
+    right: 10px;
+    margin-top: 0px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    border-radius: 5px;
+    background-color: rgba(176, 196, 222, 0.5);
+    /* transform: translateX(-50%); */
+    z-index: 990;
+    /* gap: 2px; */
+}
+
+.list-settings-fullscreen {
+    top: 80px !important;
+}
+
+/* panel */
+.list-settings-panel {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: rbg(255, 0, 0, 0, 0.5);
+    z-index: 99;
+}
+
+.list-settings-panel-hidden {
+    display: none;
+}
+
+/* search-group */
+.list-settings-search-group {
+    margin-top: 0px;
+    padding-left: 8px;
+    /* row-gap: 14px; */
+    /* column-gap: 14px; */
+    z-index: 999;
+}
+
+.list-settings-button {
+    margin-right: 8px;
+    z-index: 999;
+}
+
+/* card */
+.list-settings-card {
+    margin: 8px;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    z-index: 999;
+}
+
+.list-settings-card .ant-card-head {
+    margin: 0px;
+    padding-left: 10px;
+    min-height: 30px;
+    z-index: 999;
+}
+
+
+/* search */
+.list-settings-search-input {
+    font-size: 16px;
+    flex: 1;
+    width: 200px;
+    margin-right: 2px;
+    z-index: 999;
+}
+
+.list-settings-search-input-hidden {
+    display: none !important;
+}
+
+.list-settings-search-input .ant-input-affix-wrapper {
+    /* padding-left: 30px; */
+    padding-left: 10px;
+    /* border-radius: 10px; */
+    z-index: 999;
+}
+
+.list-settings-search-input .ant-input-group-addon {
+    display: none;
+}
+
+/* filter */
+.list-settings-filter-group {
+    display: inline-flex;
+    flex-direction: column;
+    justify-items: center;
+    margin-top: 0px;
+    width: 100%;
+    /* padding: 8px; */
+}
+
+.list-settings-filter-group-hidden {
+    display: none !important;
+}
+
+.list-settings-filter-item {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+}
+
+.list-settings-filter-item-label {
+    width: 100%;
+}
+
+.list-settings-filter-item-value {
+    flex: 1;
+}
+
+/* sort */
+.list-settings-sort-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.list-settings-sort-item-direction {
+    display: block;
+}

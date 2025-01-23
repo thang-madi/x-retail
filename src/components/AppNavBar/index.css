@@ -1,0 +1,11 @@
+/* CSS for AndroidStatusBar */
+
+.nav-bar {
+    display: none;
+}
+
+.nav-bar-android {
+    display: block;
+    height: 44px;
+    background-color: black;
+}

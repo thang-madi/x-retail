@@ -1,0 +1,22 @@
+/* css for RelatedPage */
+
+.related-modal-page {
+    margin: 0px;
+    padding: 0px;
+}
+
+.related-modal-page .ant-drawer-body {
+    padding: 0px;
+}
+
+.related-modal-page-list {
+    padding: 0px;
+}
+
+.related-modal-page-list-item {
+    padding: 10px 30px 10px 30px !important;
+}
+
+.related-modal-page-empty-row {
+    height: 40px;
+}

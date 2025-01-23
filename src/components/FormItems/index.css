@@ -1,0 +1,28 @@
+/* CSS for components */
+
+/* Value choice */
+/* .form-item-value-choice {
+    outline: none;
+    border-color: #fffff0;
+} */
+
+/* .form-item-value-choice:focus {
+    outline: none;
+    border-color: #000000;
+} */
+
+/* .form-item-value-choice .ant-form-item-control-input-content:focus {
+    outline: none;
+    border-color: #000000;
+} */
+
+/* .form-item-value-choice .ant-input-outlined:focus {
+    border-color: #000000;
+    box-shadow: none !important;
+} */
+
+
+/* .form-item-value-choice .ant-input:focus {
+    border-color: #000000;
+    box-shadow: none !important;
+} */

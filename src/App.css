@@ -1,0 +1,91 @@
+.App {
+	text-align: center;
+}
+
+/* .App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */
+
+/* @media (max-width:576px) {
+    .WebHeader {
+        display: none;
+    }
+} */
+
+/* @media (min-width:576px) {
+    .AppMenuIcon .app-menu-icon {
+        display: none;
+    }
+} */
+
+.hidden {
+	display: none;
+}
+
+.lazyload {
+	opacity: 0;
+	transition: opacity 0.5s;
+}
+
+.lazyloaded {
+	opacity: 1;
+}
+
+.custom-spin-wrapper {
+	/* Màu nền mờ */
+	background-color: rgba(0, 0, 0, 0.1);
+	/* Khoảng cách bên trong */
+	padding: 20px;
+	/* Bo góc */
+	border-radius: 10px;
+	/* Sử dụng flexbox */
+	display: flex;
+	/* Căn giữa theo chiều ngang */
+	justify-content: center;
+	/* Căn giữa theo chiều dọc */
+	align-items: center;
+	/* Chiều cao toàn màn hình */
+	height: 100vh;
+	width: 100vw;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+}
+
+.ant-drawer-content-wrapper {
+	/* height: calc(100%-74px) !important; */
+	top: var(--status-bar-height) !important;
+	bottom: var(--nav-bar-height) !important;
+}

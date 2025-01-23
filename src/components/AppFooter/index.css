@@ -1,0 +1,50 @@
+/* CSS for AppFooter */
+
+.app-footer {
+    display: none;
+    background-color: lightblue;
+}
+
+.app-footer-desktop {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    height: var(--footer-height);
+    background-color: var(--footer-background-color);
+    color: dimgray;
+    padding-bottom: 12px;
+}
+
+/* .app-footer-android {
+    height: var(--footer-height-android) !important;
+} */
+
+.app-footer-android {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: flex-end;
+    height: var(--footer-height-android);
+    background-color: var(--footer-background-color);
+    color: dimgray;
+    padding-bottom: 15px;
+}
+
+.app-footer-title-left {
+    margin: 0px;
+    width: 50px;
+    text-align: right;
+}
+
+.app-footer-title-center {
+    margin: 0px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-bottom: 2px;
+}
+
+.app-footer-title-right {
+    margin: 0px;
+    width: 50px;
+}

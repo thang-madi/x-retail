@@ -1,0 +1,60 @@
+/* CSS for components */
+
+.list-search-item {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    top: 10px;
+    right: 0px;
+    width: 200px;
+    left: 50%;
+    margin-top: 0px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: lightsteelblue;
+    transform: translateX(-50%);
+    z-index: 990;
+    /* border: 2px solid red; */
+}
+
+.list-search-item-fullscreen {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    top: 30px;
+    right: 0px;
+    width: 200px;
+    left: 50%;
+    margin-top: 0px;
+    padding: 8px;
+    border-radius: 5px;
+    background-color: lightsteelblue;
+    transform: translateX(-50%);
+    z-index: 990;
+    /* border: 2px solid red; */
+}
+
+.list-search-input {
+    font-size: 16px;
+}
+
+.list-search-input .ant-input-affix-wrapper {
+    padding-left: 30px;
+}
+
+.list-search-input .ant-input-group-addon {
+    display: none;
+}
+
+.list-search-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    pointer-events: none;
+    font-size: 16px;
+    color: gray;
+    /* border-radius: 10px; */
+}

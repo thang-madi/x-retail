@@ -1,0 +1,583 @@
+{
+    "XTSObject": {},
+    "XTSRecordFilter": {},
+    "XTSObjectId": {
+        "id": {
+            "name": "id",
+            "localName": "id",
+            "type": "String",
+            "count": 1
+        },
+        "dataType": {
+            "name": "dataType",
+            "localName": "dataType",
+            "type": "String",
+            "count": 1
+        },
+        "presentation": {
+            "name": "presentation",
+            "localName": "presentation",
+            "type": "String",
+            "count": 0
+        },
+        "url": {
+            "name": "url",
+            "localName": "URL",
+            "type": "String",
+            "count": 0
+        }
+    },
+    "XTSRecordKey": {
+        "dataType": {
+            "name": "dataType",
+            "localName": "dataType",
+            "type": "String",
+            "count": 1
+        },
+        "period": {
+            "name": "period",
+            "localName": "period",
+            "type": "DateTime",
+            "count": 0
+        },
+        "register": {
+            "name": "register",
+            "localName": "register",
+            "type": "XTSObjectId",
+            "count": 0
+        },
+        "filter": {
+            "name": "filter",
+            "localName": "filter",
+            "type": "XTSRecordFilter",
+            "count": 1
+        },
+        "id": {
+            "name": "id",
+            "localName": "id",
+            "type": "String",
+            "count": 1
+        }
+    },
+    "XTSRecord": {
+        "recordKey": {
+            "name": "recordKey",
+            "localName": "recordKey",
+            "type": "XTSRecordKey",
+            "count": 1
+        }
+    },
+    "XTSRecordSet": {
+        "dataType": {
+            "name": "dataType",
+            "localName": "dataType",
+            "type": "String",
+            "count": 1
+        },
+        "filter": {
+            "name": "filter",
+            "localName": "filter",
+            "type": "XTSRecordFilter",
+            "count": 0
+        },
+        "records": {
+            "name": "records",
+            "localName": "records",
+            "type": "XTSRecord",
+            "count": -1
+        }
+    },
+    "XTSCondition": {
+        "property": {
+            "name": "property",
+            "localName": "property",
+            "type": "String",
+            "count": 1
+        },
+        "value": {
+            "name": "value",
+            "localName": "value",
+            "type": "AnyType"
+        },
+        "comparisonOperator": {
+            "name": "comparisonOperator",
+            "localName": "comparisonOperator",
+            "type": "String",
+            "count": 0
+        }
+    },
+    "XTSCreateObjectsRequest": {
+        "objects": {
+            "name": "objects",
+            "localName": "objects",
+            "type": "XTSObject",
+            "count": -1
+        }
+    },
+    "XTSCreateObjectsResponse": {
+        "objects": {
+            "name": "objects",
+            "localName": "objects",
+            "type": "XTSObject",
+            "count": -1
+        }
+    },
+    "XTSDeleteObjectsRequest": {
+        "objectIds": {
+            "name": "objectIds",
+            "localName": "objectIds",
+            "type": "XTSObjectId",
+            "count": -1
+        }
+    },
+    "XTSDeleteObjectsResponse": {
+        "objectIds": {
+            "name": "objectIds",
+            "localName": "objectIds",
+            "type": "XTSObjectId",
+            "count": -1
+        }
+    },
+    "XTSError": {
+        "description": {
+            "name": "description",
+            "localName": "description",
+            "type": "String",
+            "count": 1
+        },
+        "subject": {
+            "name": "subject",
+            "localName": "subject",
+            "type": "String",
+            "count": 0
+        }
+    },
+    "XTSGetObjectListRequest": {
+        "dataType": {
+            "name": "dataType",
+            "localName": "dataType",
+            "type": "String",
+            "count": 1
+        },
+        "columnSet": {
+            "name": "columnSet",
+            "localName": "columnSet",
+            "type": "String",
+            "count": -1
+        },
+        "sortBy": {
+            "name": "sortBy",
+            "localName": "sortBy",
+            "type": "String",
+            "count": -1
+        },
+        "positionFrom": {
+            "name": "positionFrom",
+            "localName": "positionFrom",
+            "type": "Number",
+            "count": 0
+        },
+        "positionTo": {
+            "name": "positionTo",
+            "localName": "positionTo",
+            "type": "Number",
+            "count": 0
+        },
+        "limit": {
+            "name": "limit",
+            "localName": "limit",
+            "type": "Number",
+            "count": 0
+        },
+        "conditions": {
+            "name": "conditions",
+            "localName": "conditions",
+            "type": "XTSCondition",
+            "count": -1
+        }
+    },
+    "XTSGetObjectListResponse": {
+        "items": {
+            "name": "items",
+            "localName": "items",
+            "type": "XTSObjectListItem",
+            "count": -1
+        }
+    },
+    "XTSObjectListItem": {
+        "canHaveChildren": {
+            "name": "canHaveChildren",
+            "localName": "canHaveChildren",
+            "type": "Boolean",
+            "count": 1,
+            "ref": false
+        },
+        "isFolder": {
+            "name": "isFolder",
+            "localName": "isFolder",
+            "type": "Boolean",
+            "count": 1,
+            "ref": false
+        },
+        "object": {
+            "name": "object",
+            "localName": "object",
+            "type": "XTSObject",
+            "count": 1
+        },
+        "parentId": {
+            "name": "parentId",
+            "localName": "parentId",
+            "type": "Boolean",
+            "count": 1
+        }
+    },
+    "XTSGetObjectsRequest": {
+        "objectIds": {
+            "name": "dataType",
+            "localName": "dataType",
+            "type": "String",
+            "count": -1
+        },
+        "columnSet": {
+            "name": "columnSet",
+            "localName": "columnSet",
+            "type": "String",
+            "count": -1
+        }
+    },
+    "XTSGetObjectsResponse": {
+        "objects": {
+            "name": "objects",
+            "localName": "objects",
+            "type": "XTSObject",
+            "count": -1
+        }
+    },
+    "XTSUpdateObjectsRequest": {
+        "objects": {
+            "name": "dataType",
+            "localName": "dataType",
+            "type": "String",
+            "count": -1
+        }
+    },
+    "XTSUpdateObjectsResponse": {
+        "objects": {
+            "name": "objects",
+            "localName": "objects",
+            "type": "XTSObject",
+            "count": -1
+        }
+    },
+    "XTSDownloadObjectListRequest": {
+        "dataType": {
+            "name": "dataType",
+            "localName": "dataType",
+            "type": "String",
+            "count": 1
+        },
+        "prefix": {
+            "name": "prefix",
+            "localName": "prefix",
+            "type": "String",
+            "count": 0
+        }
+    },
+    "XTSDownloadObjectListResponse": {
+        "objects": {
+            "name": "objects",
+            "localName": "objects",
+            "type": "XTSObject",
+            "count": -1
+        }
+    },
+    "XTSSignInRequest": {
+        "deviceId": {
+            "name": "deviceId",
+            "localName": "deviceId",
+            "type": "String",
+            "count": 1
+        },
+        "userToken": {
+            "name": "userToken",
+            "localName": "userToken",
+            "type": "String",
+            "count": 0
+        },
+        "userName": {
+            "name": "userName",
+            "localName": "userName",
+            "type": "String",
+            "count": 0
+        },
+        "password": {
+            "name": "password",
+            "localName": "password",
+            "type": "String",
+            "count": 0
+        },
+        "telegramId": {
+            "name": "telegramId",
+            "localName": "telegramId",
+            "type": "String",
+            "count": 0
+        },
+        "zaloId": {
+            "name": "zaloId",
+            "localName": "zaloId",
+            "type": "String",
+            "count": 0
+        },
+        "fullName": {
+            "name": "fullName",
+            "localName": "fullName",
+            "type": "String",
+            "count": 0
+        },
+        "deviceInfo": {
+            "name": "deviceInfo",
+            "localName": "deviceInfo",
+            "type": "String",
+            "count": 0
+        },
+        "phone": {
+            "name": "phone",
+            "localName": "phone",
+            "type": "String",
+            "count": 0
+        },
+        "otp": {
+            "name": "otp",
+            "localName": "otp",
+            "type": "String",
+            "count": 0
+        }
+    },
+    "XTSSignInResponse": {
+        "deviceId": {
+            "name": "deviceId",
+            "localName": "deviceId",
+            "type": "String",
+            "count": 1
+        },
+        "userToken": {
+            "name": "userToken",
+            "localName": "userToken",
+            "type": "XTSObjectId",
+            "count": 0
+        },
+        "userName": {
+            "name": "userName",
+            "localName": "userName",
+            "type": "String",
+            "count": 0
+        },
+        "phone": {
+            "name": "phone",
+            "localName": "phone",
+            "type": "String",
+            "count": 0
+        },
+        "externalAccount": {
+            "name": "externalAccount",
+            "localName": "externalAccount",
+            "type": "XTSObjectId",
+            "count": 0
+        },
+        "externalAccountID": {
+            "name": "externalAccountID",
+            "localName": "externalAccountID",
+            "type": "String",
+            "count": 0
+        },
+        "externalAccountOwner": {
+            "name": "externalAccountOwner",
+            "localName": "externalAccountOwner",
+            "type": "String",
+            "count": 0
+        },
+        "user": {
+            "name": "user",
+            "localName": "user",
+            "type": "XTSObjectId",
+            "count": 0
+        },
+        "defaultValues": {
+            "name": "defaultValues",
+            "localName": "defaultValues",
+            "type": "XTSObject",
+            "count": 0
+        },
+        "fileStorage": {
+            "name": "s3Storage",
+            "localName": "s3Storage",
+            "type": "String",
+            "count": 0
+        }
+    },
+    "XTSSignOutRequest": {
+        "deviceId": {
+            "name": "deviceId",
+            "localName": "deviceId",
+            "type": "String",
+            "count": 1
+        },
+        "user": {
+            "name": "user",
+            "localName": "user",
+            "type": "XTSObjectId",
+            "count": 0
+        },
+        "externalAccount": {
+            "name": "externalAccount",
+            "localName": "externalAccount",
+            "type": "XTSObjectId",
+            "count": 0
+        }
+    },
+    "XTSSignOutResponse": {
+        "externalAccount": {
+            "name": "externalAccount",
+            "localName": "externalAccount",
+            "type": "XTSObjectId",
+            "count": 0
+        },
+        "user": {
+            "name": "user",
+            "localName": "user",
+            "type": "XTSObjectId",
+            "count": 0
+        },
+        "customer": {
+            "name": "customer",
+            "localName": "customer",
+            "type": "XTSObjectId",
+            "count": 0
+        },
+        "defaultValues": {
+            "name": "defaultValues",
+            "localName": "defaultValues",
+            "type": "",
+            "count": 0
+        }
+    },
+    "XTSGetRecordSetRequest": {
+        "dataType": {
+            "name": "dataType",
+            "localName": "dataType",
+            "type": "String",
+            "count": 1
+        },
+        "filter": {
+            "name": "filter",
+            "localName": "filter",
+            "type": "XTSRecordFilter",
+            "count": 1
+        }
+    },
+    "XTSGetRecordSetResponse": {
+        "recordSet": {
+            "name": "recordSet",
+            "localName": "recordSet",
+            "type": "XTSRecordSet",
+            "count": 1
+        }
+    },
+    "XTSUpdateRecordSetRequest": {
+        "recordSet": {
+            "name": "recordSet",
+            "localName": "recordSet",
+            "type": "XTSRecordSet",
+            "count": 1
+        }
+    },
+    "XTSUpdateRecordSetResponse": {
+        "dataType": {
+            "name": "dataType",
+            "localName": "dataType",
+            "type": "String",
+            "count": 1
+        },
+        "records": {
+            "name": "records",
+            "localName": "records",
+            "type": "XTSRecordKey",
+            "count": -1
+        }
+    },
+    "XTSUpdateRecordsRequest": {
+        "dataType": {
+            "name": "dataType",
+            "localName": "dataType",
+            "type": "String",
+            "count": 1
+        },
+        "records": {
+            "name": "records",
+            "localName": "records",
+            "type": "XTSRecord",
+            "count": -1
+        }
+    },
+    "XTSUpdateRecordsResponse": {
+        "dataType": {
+            "name": "dataType",
+            "localName": "dataType",
+            "type": "String",
+            "count": 1
+        },
+        "records": {
+            "name": "records",
+            "localName": "records",
+            "type": "XTSRecorKey",
+            "count": -1
+        }
+    },
+    "XTSConnectUserRequest": {
+        "externalAccount": {
+            "name": "externalAccount",
+            "localName": "externalAccount",
+            "type": "XTSObjectId",
+            "count": 1
+        },
+        "customer": {
+            "name": "customer",
+            "localName": "customer",
+            "type": "XTSObjectId",
+            "count": 1
+        },
+        "user": {
+            "name": "user",
+            "localName": "user",
+            "type": "XTSObjectId",
+            "count": 1
+        }
+    },
+    "XTSConnectUserResponse": {
+        "externalAccount": {
+            "name": "externalAccount",
+            "localName": "externalAccount",
+            "type": "XTSObjectId",
+            "count": 1
+        },
+        "customer": {
+            "name": "customer",
+            "localName": "customer",
+            "type": "XTSObjectId",
+            "count": 1
+        },
+        "user": {
+            "name": "user",
+            "localName": "user",
+            "type": "XTSObjectId",
+            "count": 1
+        },
+        "employee": {
+            "name": "employee",
+            "localName": "employee",
+            "type": "XTSObjectId",
+            "count": 1
+        }
+    }
+}

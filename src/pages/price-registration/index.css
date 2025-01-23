@@ -1,0 +1,363 @@
+/* css for Order */
+
+/* 
+ObjectList
+ObjectView
+ObjectEdit
+PaymentEdit
+OrderStateTag
+ObjectCard
+ObjectPrint
+ObjectInventory
+ObjectListSettings 
+*/
+
+
+/* ObjectInventory */
+
+/* ObjectList */
+.price-registration-list {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* ObjectView */
+.price-registration-view {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.price-registration-view-title {
+    font-weight: bold;
+}
+
+.price-registration-view-divider {
+    border-color: lightgray;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.price-registration-view-item {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0px;
+}
+
+.price-registration-view-item-title {
+    min-width: 100;
+}
+
+/* ObjectPrint */
+.price-registration-print {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* ObjectEdit */
+.price-registration-edit {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.price-registration-edit-header {
+    margin: 5px;
+}
+
+.price-registration-edit-title {
+    font-weight: bold;
+}
+
+.price-registration-edit-item {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.price-registration-edit-item-customer {
+    width: calc(100% - 50px);
+    max-width: 700px;
+    margin-bottom: 12px;
+}
+
+.price-registration-edit-item-visible {
+    display: block;
+}
+
+.price-registration-edit-item-hidden {
+    display: none;
+}
+
+.price-registration-edit-item-label {
+    max-width: 700px;
+    /* margin-bottom: 12px; */
+    align-items: center;
+}
+
+.price-registration-edit-divider {
+    border-color: lightgray;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+
+.price-registration-edit-posted {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.price-registration-edit-currency {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 20px;
+}
+
+/* ObjectInventory */
+.price-registration-inventory-edit {
+    overflow-y: auto;
+    margin: 0px;
+}
+
+.price-registration-inventory-edit-card {
+    margin: 0px;
+    height: 80px;
+}
+
+.price-registration-inventory-edit-card .ant-card-body {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 10px !important;
+}
+
+.price-registration-inventory-edit-card-picture {
+    width: 120px;
+    height: 120px;
+    overflow: hidden;
+}
+
+.price-registration-inventory-edit-card-picture-image {
+    object-fit: cover,
+}
+
+.price-registration-inventory-edit-card-info {
+    padding-left: 15px;
+    padding-right: 20px;
+    flex-grow: 1;
+}
+
+.price-registration-inventory-edit-card-info-description {
+    font-weight: bold;
+}
+
+.price-registration-inventory-edit-amount {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-registration-inventory-edit-quantity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3px;
+}
+
+@media (max-width:575px) {
+    .price-registration-inventory-edit-quantity-title-long {
+        display: none;
+    }
+}
+
+@media (min-width:576px) {
+    .price-registration-inventory-edit-quantity-title-short {
+        display: none;
+        margin-left: 6px;
+    }
+}
+
+.price-registration-inventory-edit-quantity-title-long {
+    min-width: 1px;
+    margin-right: 5px;
+}
+
+.price-registration-inventory-edit-quantity-title-short {
+    min-width: 1px;
+    margin-right: 5px;
+}
+
+.price-registration-inventory-edit-quantity-group {
+    display: flex;
+}
+
+.price-registration-inventory-edit-uom {
+    width: 100px;
+    margin-bottom: 0px;
+}
+
+.price-registration-inventory-edit-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3px;
+}
+
+
+/* SupplierInvoiceInventoryView */
+.price-registration-inventory-view {
+    overflow-y: auto;
+    margin: 0px;
+    height: 100px;
+}
+
+.price-registration-inventory-view-card {
+    display: flex;
+    margin: 0px;
+    height: 50px;
+}
+
+.price-registration-inventory-view-card .ant-card-body {
+    padding: 0px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    padding: 0px !important;
+}
+
+.price-registration-inventory-view-card-picture {
+    width: 100px;
+    height: 100px;
+    overflow: hidden;
+}
+
+.price-registration-inventory-view-card-picture-image {
+    object-fit: cover,
+}
+
+.price-registration-inventory-view-card-info {
+    padding-left: 15px;
+    padding-right: 20px;
+    flex-grow: 1;
+}
+
+.price-registration-inventory-view-card-info-description {
+    font-weight: bold;
+}
+
+.price-registration-inventory-view-amount {
+    display: flex;
+    justify-content: space-between;
+}
+
+.price-registration-inventory-view-quantity {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3px;
+}
+
+@media (max-width:575px) {
+    .price-registration-inventory-view-quantity-title-long {
+        display: none;
+    }
+}
+
+@media (min-width:576px) {
+    .price-registration-inventory-view-quantity-title-short {
+        display: none;
+        margin-left: 6px;
+    }
+}
+
+.price-registration-inventory-view-quantity-title-long {
+    min-width: 1px;
+    margin-right: 5px;
+}
+
+.price-registration-inventory-view-quantity-title-short {
+    min-width: 1px;
+    margin-right: 5px;
+}
+
+.price-registration-inventory-view-quantity-group {
+    display: flex;
+}
+
+.product-row-edit-uom {
+    width: 100px;
+    margin-bottom: 0px;
+}
+
+.price-registration-inventory-view-price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 3px;
+}
+
+/* Card */
+.price-registration-card {
+    /* padding: 10px; */
+    margin: 2px;
+    height: 200px;
+    width: 100%;
+    padding: 0px;
+}
+
+.price-registration-card .ant-card-body {
+    padding: 20px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    width: calc(100% - 8px);
+    align-items: start;
+    margin: 0px;
+}
+
+.price-registration-card-avatar {
+    margin: 10px;
+    width: 150px;
+}
+
+.price-registration-card-content {
+    padding-left: 0px;
+    padding-right: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    flex: 1;
+    height: 100%;
+}
+
+.price-registration-card-title {
+    text-align: left;
+    font-weight: bold;
+}
+
+.price-registration-card-divider {
+    border-color: lightgray;
+    margin-top: 5px;
+    margin-bottom: 5px
+}
+
+.price-registration-card-row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.price-registration-card-choice-button {
+    padding: 0px;
+    border-radius: 20px;
+    border-color: cornflowerblue;
+    background-color: cornflowerblue;
+    color: white;
+}

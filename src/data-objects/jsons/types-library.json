@@ -1,0 +1,202 @@
+{
+    "XTSUser": {
+        "_type": {
+            "name": "_type",
+            "localName": "_Type",
+            "type": "String",
+            "count": 1,
+            "ref": "XTSUser"
+        },
+        "objectId": {
+            "name": "id",
+            "localName": "Id",
+            "type": "XTSObjectId",
+            "count": 1
+        },
+        "individual": {
+            "name": "individual",
+            "localName": "individual",
+            "type": "XTSObjectId",
+            "count": 1,
+            "ref": "XTSIndividual"
+        },
+        "description": {
+            "name": "description",
+            "localName": "Description",
+            "type": "String",
+            "count": 1
+        },
+        "phone": {
+            "name": "phone",
+            "localName": "Phone",
+            "type": "String",
+            "count": 0
+        },
+        "email": {
+            "name": "email",
+            "localName": "Email",
+            "type": "String",
+            "count": 0
+        }
+    },
+    "XTSFile": {
+        "_type": {
+            "name": "_type",
+            "localName": "_Type",
+            "type": "String",
+            "count": 1,
+            "ref": "XTSFile"
+        },
+        "author": {
+            "name": "author",
+            "localName": "Author",
+            "type": "XTSObjectId",
+            "count": 1,
+            "ref": "XTSUser"
+        },
+        "fileOwner": {
+            "name": "fileOwner",
+            "localName": "FileOwner",
+            "type": "XTSObjectId",
+            "count": 0,
+            "ref": "XTSFile"
+        },
+        "description": {
+            "name": "description",
+            "localName": "Description",
+            "type": "String",
+            "count": 0
+        },
+        "creationDate": {
+            "name": "creationDate",
+            "localName": "CreationDate",
+            "type": "DateTime",
+            "count": 0
+        },
+        "longDescription": {
+            "name": "longDescription",
+            "localName": "LongDescription",
+            "type": "String",
+            "count": 0
+        },
+        "size": {
+            "name": "size",
+            "localName": "Size",
+            "type": "Number",
+            "count": 0
+        },
+        "extension": {
+            "name": "extension",
+            "localName": "Extension",
+            "type": "String",
+            "count": 0
+        }
+    },
+    "XTSDownloadFileRequest": {
+        "fileId": {
+            "name": "author",
+            "localName": "Author",
+            "type": "XTSObjectId",
+            "count": 1,
+            "ref": "XTSFile"
+        }
+    },
+    "XTSDownloadFileResponse": {
+        "file": {
+            "name": "file",
+            "localName": "File",
+            "type": "XTSFile",
+            "count": 1
+        },
+        "binaryData": {
+            "name": "binaryData",
+            "localName": "BinaryData",
+            "type": "String",
+            "count": 1
+        }
+    },
+    "XTSGetFilesRequest": {
+        "fileOwner": {
+            "name": "fileOwner",
+            "localName": "FileOwner",
+            "type": "XTSObjectId",
+            "count": 1
+        },
+        "startWith": {
+            "name": "startWith",
+            "localName": "StartWith",
+            "type": "String",
+            "count": 0
+        },
+        "extensions": {
+            "name": "extensions",
+            "localName": "Extensions",
+            "type": "String",
+            "count": 0
+        }
+    },
+    "XTSGetFilesResponse": {
+        "files": {
+            "name": "files",
+            "localName": "Files",
+            "type": "XTSFile",
+            "count": -1
+        }
+    },
+    "XTSUploadFileRequest": {
+        "file": {
+            "name": "file",
+            "localName": "File",
+            "type": "XTSFile",
+            "count": 1
+        },
+        "binaryData": {
+            "name": "binaryData",
+            "localName": "BinaryData",
+            "type": "String",
+            "count": 1
+        },
+        "startsWith": {
+            "name": "startsWith",
+            "localName": "startsWith",
+            "type": "String",
+            "count": 0
+        },
+        "attributeName": {
+            "name": "attributeName",
+            "localName": "attributeName",
+            "type": "String",
+            "count": 0
+        },
+        "copyToS3Storage": {
+            "name": "copyToS3Storage",
+            "localName": "copyToS3Storage",
+            "type": "Boolean",
+            "count": 0
+        }
+    },
+    "XTSUploadFileResponse": {
+        "file": {
+            "name": "file",
+            "localName": "File",
+            "type": "XTSFile",
+            "count": 1
+        }
+    },
+    "XTSDeleteFilesRequest": {
+        "fileIds": {
+            "name": "fileIds",
+            "localName": "fileIds",
+            "type": "XTSObjectId",
+            "count": -1
+        }
+    },
+    "XTSDeleteFilesResponse": {
+        "fileIds": {
+            "name": "fileIds",
+            "localName": "fileIds",
+            "type": "XTSObjectId",
+            "count": -1
+        }
+    }
+}

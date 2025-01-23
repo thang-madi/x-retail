@@ -1,0 +1,41 @@
+/* css for Order */
+
+/* Receipt */
+.money-receipt {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+.money-receipt-title {
+    font-weight: bold;
+}
+
+.money-receipt-divider {
+    border-color: lightgray;
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+
+.money-receipt-item {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin: 0px;
+}
+
+.money-receipt-currency {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 20px;
+}
+
+.money-receipt-item-label {
+    max-width: 700px;
+    margin-bottom: 12px;
+}
+
+.money-receipt-item-title {
+    min-width: 100;
+}

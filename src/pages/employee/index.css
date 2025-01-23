@@ -1,0 +1,56 @@
+/* css for Employees */
+
+/* ListPage */
+.employee-list-page {
+    width: 100%;
+    height: 100%;
+    padding-top: 10px;
+    padding-left: 2px;
+    padding-right: 2px;
+    overflow-x: hidden;
+}
+
+/* ViewPage */
+.employee-view-page {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* EditPage */
+.employee-edit-page {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+}
+
+/* Card */
+.employee-card {
+    display: flex;
+    margin: 2px;
+    height: 65px;
+    width: 100%;
+    align-items: center;
+}
+
+.employee-card .ant-card-body {
+    width: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.employee-card-row {
+    padding-left: 15px;
+    padding-right: 10px;
+    flex-grow: 1;
+}
+
+.employee-card-choice-button {
+    width: 80px;
+    border-radius: 20px;
+    border-color: cornflowerblue;
+    background-color: cornflowerblue;
+    color: white;
+}

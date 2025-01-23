@@ -1,0 +1,68 @@
+.amount-input {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.amount-input-field {
+    margin-bottom: 0px;
+}
+
+.amount-input-title {
+    margin-bottom: 0px;
+}
+
+.amount-input-field .ant-input-number-input {
+    text-align: right;
+}
+
+.amount-input-result {
+    /* border: 1px solid mediumblue; */
+    background-color: darkcyan;
+    color: white;
+    font-size: 30px;
+    /* font-weight: bold; */
+    border-radius: 2px;
+    margin: 10px 0px 10px 0px;
+    padding: 0px 10px 0px 10px;
+    text-align: right;
+}
+
+.amount-input-group {
+    display: flex;
+    gap: 5px;
+}
+
+.amount-input-group-numpad {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.amount-input-numpad-row {
+    display: flex;
+    gap: 5px;
+}
+
+.amount-input-group-commands {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.amount-input-description {
+    display: flex;
+    justify-content: space-between;
+    font-size: 16;
+}
+
+.amount-input-button {
+    width: 60px;
+    height: 40px;
+}
+
+.amount-input-command {
+    width: 80px;
+    height: 40px;
+}

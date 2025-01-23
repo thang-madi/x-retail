@@ -1,0 +1,26 @@
+/* CSS for components */
+
+.pdf-viewer {
+    height: 100%;
+}
+
+.i-frame {
+    border: none;
+    margin: 0px;
+    /* height: 100%; */
+}
+
+.toolbar {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+}
+
+.toolbar-button {
+    padding: 0px 10px;
+}
+
+.toolbar-button-hidden {
+    display: none;
+}

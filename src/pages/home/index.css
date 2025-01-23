@@ -1,0 +1,208 @@
+/* Page */
+.home-page {
+    background-color: lightblue;
+    height: 100%;
+}
+
+.home-page-fullscreen {
+    background-color: lightblue;
+    height: 100%;
+    padding-top: 80px;
+}
+
+.home-page-title {
+    height: 70px;
+    padding-left: 15px;
+    padding-top: 20px;
+    /* text-align: center; */
+    /* align-items: center; */
+    font-size: 20px;
+}
+
+.home-page-bottom {
+    position: absolute;
+    bottom: 10px;
+    margin-left: 10px;
+    font-size: 12px;
+    font-style: italic;
+    color: darkcyan;
+}
+
+.home-page-group {
+    height: 30px;
+    margin-left: 15px;
+    margin-bottom: 0px;
+    font-weight: bold;
+    color: darkcyan;
+}
+
+/* Sales */
+.home-page-sales-group {
+    margin: 10px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.home-page-sales-group .ant-card-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+}
+
+.home-page-sales-icon {
+    font-size: 60px;
+    color: gray;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.home-page-sales-value {
+    /* font-size: 60px; */
+    /* color: gray; */
+    /* margin-left: 20px; */
+    text-align: center;
+    margin-left: 10px;
+    margin-right: 0px;
+}
+
+/* Payment */
+.home-page-payment-group {
+    margin: 10px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.home-page-payment-card {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.home-page-payment-card .ant-card-body {
+    padding: 2px;
+}
+
+.home-page-payment-statistic .ant-statistic-title {
+    text-align: center;
+}
+
+.home-page-payment-statistic .ant-statistic-content {
+    text-align: center;
+}
+
+/* Order */
+.home-page-order-group {
+    /* height: 100px; */
+    margin: 10px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding-top: 15px;
+    /* display: grid; */
+    /* grid-template-columns: repeat(3, 1fr); */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.home-page-order-group .ant-card-body {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.home-page-order-badge {
+    flex: 1;
+    text-align: center;
+}
+
+.home-page-order-badge-title {
+    text-align: center;
+    margin-top: 10px;
+    color: gray;
+}
+
+.float-button {
+    background-color: rgba(64, 64, 64, 0.5);
+    border: 0px;
+}
+
+.float-button-icon {
+    color: white;
+}
+
+/* Create */
+.home-page-create-group {
+    margin: 10px;
+    margin-bottom: 0px;
+    padding: 10px;
+    /* display: grid; */
+    /* grid-template-columns: repeat(3, 1fr); */
+    display: flex;
+    /* justify-content: space-around; */
+    align-items: center;
+    background-color: lightblue;
+}
+
+.home-page-create-group .ant-card-body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+}
+
+.home-page-button-group {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 10px 5px 10px;
+    padding: 5px 10px 5px 10px;
+    flex-grow: 1;
+    /* border: 1px lightcyan solid; */
+    border-radius: 10px;
+    /* margin-right: 20px; */
+    /* width: 100%; */
+}
+
+.home-page-button-group-title {
+    /* position: absolute;
+    top: -10px; */
+    width: 100px;
+    height: 100%;
+    color: cadetblue;
+    /* font-weight: bold; */
+}
+
+.home-page-button-100 {
+    margin: 0px 10px 0px 10px;
+    width: 100px;
+    min-height: 40px;
+    flex-grow: 1;
+    color: cadetblue;
+    border-radius: 20px;
+}
+
+.home-page-button-120 {
+    margin: 0px 10px 0px 10px;
+    width: 120px;
+    min-height: 40px;
+    flex-grow: 1;
+    color: cadetblue;
+    border-radius: 20px;
+}
+
+.home-page-button-140 {
+    margin: 0px 10px 0px 10px;
+    width: 140px;
+    min-height: 40px;
+    flex-grow: 1;
+    color: cadetblue;
+    border-radius: 20px;
+}
