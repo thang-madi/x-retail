@@ -10,6 +10,7 @@ import { getXTSSlice } from './data-storage/xts-mappings'
 import { REQUEST_STATUSES } from './commons/enums'
 
 import './App.css'
+import { useAppDataObjects } from './hooks/useApp'
 
 // function App() {
 //   return (
@@ -89,6 +90,16 @@ const App: React.FC = () => {
 
         console.log('url', window.location.href)
     }, [])
+
+    const params = {
+        dataType: 'XTSProduct',
+        sliceName: 'products',
+        collectionName: 'products',
+        limit: 50,
+        orderBy: 'description',
+        orderByDirection: 'asc',
+    }
+    useAppDataObjects(params)
 
     /////////////////////////////////////////
     //  

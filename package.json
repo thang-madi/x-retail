@@ -19,6 +19,7 @@
     "dayjs": "^1.11.13",
     "env-cmd": "^10.1.0",
     "file-saver": "^2.0.5",
+    "firebase": "^11.2.0",
     "jszip": "^3.10.1",
     "lodash.debounce": "^4.0.8",
     "pako": "^2.1.0",
@@ -36,7 +37,7 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "start": "env-cmd -f .env.development react-scripts start",
+    "start": "env-cmd -f .env.production react-scripts start",
     "build": "env-cmd -f .env.development react-scripts build",
     "build:prod": "env-cmd -f .env.production react-scripts build",
     "test": "react-scripts test",

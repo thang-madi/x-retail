@@ -20,6 +20,10 @@ import { current } from '@reduxjs/toolkit'
 
 export const reducers = {
 
+    // updateItem(state: XTSObjectState, action: XTSSliceAction) {
+    //     updateItems(state.objects, action.payload)
+    // },
+
     update(state: XTSObjectState, action: XTSSliceAction) {
         updateItems(state.objects, action.payload)
     },
@@ -99,13 +103,23 @@ export const reducers = {
 /////////////////////////////////////////
 // updateItems
 
+// function updateItem(stateObjects: XTSObject[], dataItem: XTSObject) {
+
+//     if (dataItem.objectId) {
+//         const object_id = dataItem.objectId.id
+//         const itemIndex = stateObjects.findIndex(item => item.objectId?.id === object_id)
+
+//         if (itemIndex === -1) {
+//             stateObjects.push(dataItem)
+//         } else {
+//             stateObjects[itemIndex] = dataItem
+//         }
+//     }
+// }
+
 function updateItems(stateObjects: XTSObject[], dataItems: XTSObject[]) {
 
     for (let dataItem of dataItems) {
-        // console.log('updateItems.dataItem', dataItem)
-        // const dataType = dataItem.objectId.dataType
-        // const dataObject = createXTSObject(dataType, dataItem)
-        // console.log('updateItems.dataObject', dataObject)
         if (dataItem.objectId) {
             const object_id = dataItem.objectId.id
             const itemIndex = stateObjects.findIndex(item => item.objectId?.id === object_id)
