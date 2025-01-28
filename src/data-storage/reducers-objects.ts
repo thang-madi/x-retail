@@ -29,7 +29,7 @@ export const reducers = {
     },
 
     remove(state: XTSObjectState, action: XTSSliceAction) {
-        removeItems(state.objects, action.payload)
+        removeItems(state, action.payload)
     },
 
     clear(state: XTSObjectState) {
@@ -136,11 +136,16 @@ function updateItems(stateObjects: XTSObject[], dataItems: XTSObject[]) {
 /////////////////////////////////////////
 // removeItems
 
-function removeItems(stateObjects: XTSObject[], objects: XTSObject[]) {
+function removeItems(state: XTSObjectState, objects: XTSObject[]) {
 
-    stateObjects = stateObjects.filter(item =>
-        !objects.filter(object => item.objectId?.id === object.objectId?.id)
+    // stateObjects = stateObjects.filter(item =>
+    //     objects.filter(object => item.objectId?.id === object.objectId?.id)
+    // )
+    state.objects = state.objects.filter(item =>
+        !objects.some(object => item.objectId?.id === object.objectId?.id)
     )
+    console.log('actions.removeItems', objects)
+    console.log('actions.removeItems', state.objects)
 }
 
 /////////////////////////////////////////

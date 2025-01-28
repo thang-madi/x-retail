@@ -1,6 +1,6 @@
 
 import React, { useEffect } from 'react'
-import { useDispatch } from 'react-redux'
+import { useDispatch, useSelector } from 'react-redux'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 import { routeItems } from './components/Routes'
@@ -11,27 +11,6 @@ import { REQUEST_STATUSES } from './commons/enums'
 
 import './App.css'
 import { useAppDataObjects } from './hooks/useApp'
-
-// function App() {
-//   return (
-//     <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.tsx</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>
-//   );
-// }
 
 const App: React.FC = () => {
 

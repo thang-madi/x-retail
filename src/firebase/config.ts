@@ -5,6 +5,8 @@ import { getFirestore } from 'firebase/firestore'
 import { getFunctions, httpsCallable } from "firebase/functions";
 import { getAuth, signInWithEmailAndPassword, GoogleAuthProvider, signInWithPopup, signInWithCustomToken } from 'firebase/auth';
 import { getExternalAccountData } from '../commons/external-account';
+import { getXTSSlice } from '../data-storage/xts-mappings';
+
 
 const firebaseConfig = {
     apiKey: process.env.REACT_APP_FIREBASE_API_KEY,                             // "AIzaSyCKzJaSHaWFMfvIc5_GMScHv5GGqaQ96VY",
@@ -48,31 +50,31 @@ const functions = getFunctions(app)
 //         console.error('Error: ', error)
 //     })
 
-const createCustomToken = httpsCallable(functions, 'createCustomToken')
-
-const externalAccountData = getExternalAccountData()
-console.log('externalAccountData: ', externalAccountData)
-// console.log('Dữ liệu gửi lên (JSON):', JSON.stringify(externalAccountData));
-// // createCustomToken({ uid: 'USER_UID', externalAccountId, externalAccountOwner })
-// const { telegramId, zaloId, deviceId, deviceInfo, userToken } = externalAccountData
-
-
-createCustomToken(externalAccountData)
-    .then((result: any) => {
-        const customToken = result.data.customToken
-        console.log('result: ', result)
-        console.log('customToken: ', customToken)
-        return signInWithCustomToken(auth, customToken)
-    })
-    .then((userCredential) => {
-        console.log('User signed in with custom token:', userCredential?.user)
-    })
-    .catch((error) => {
-        console.error('Error signing in with custom token:', error)
-    })
 
 
 
-export { db, auth }
+// const createCustomToken = httpsCallable(functions, 'createCustomToken')
+
+// const externalAccountData = getExternalAccountData()
+// console.log('externalAccountData: ', externalAccountData)
+
+// createCustomToken(externalAccountData)
+//     .then((result: any) => {
+//         const customToken = result.data.customToken
+//         console.log('result: ', result)
+//         console.log('customToken: ', customToken)
+//         const { sliceName, actions, apiRequest } = getXTSSlice('XTSSession')
+//         return signInWithCustomToken(auth, customToken)
+//     })
+//     .then((userCredential) => {
+//         console.log('User signed in with custom token:', userCredential?.user)
+//     })
+//     .catch((error) => {
+//         console.error('Error signing in with custom token:', error)
+//     })
+
+
+
+export { db, auth, functions as fireBaseFunctions }
 
 

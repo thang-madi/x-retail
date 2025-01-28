@@ -67,7 +67,7 @@ export function initialState_Session() {
         deviceId: '',
         userName: '',
         userToken: '',
-        acessToken: '',
+        idToken: '',
 
         telegramId: '',
         zaloId: '',

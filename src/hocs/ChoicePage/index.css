@@ -15,9 +15,9 @@
 }
 
 .modal-page .ant-drawer-content-wrapper {
-    height: calc(100%-74px) !important;
-    top: 30px !important;
-    bottom: 44px !important;
+    height: calc(100% - var(--status-bar-height) - var(--nav-bar-height)) !important;
+    top: var(--status-bar-height) !important;
+    bottom: var(--nav-bar-height) !important;
 }
 
 .modal-page-index-page {

@@ -72,7 +72,7 @@ export interface XTSSessionState extends XTSBaseState {
     deviceId: string
     userName: string
     userToken: string
-    acessToken: string
+    idToken: string
 
     telegramId: string
     zaloId: string

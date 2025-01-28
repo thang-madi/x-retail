@@ -16,6 +16,7 @@ import './index.css'
 import App from './App'
 
 import dataStorage from './data-storage'
+import FirebaseConnect from './firebase/connect'
 
 const serviceWorker = require('./serviceWorker')
 
@@ -29,6 +30,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <React.StrictMode>
     <Provider store={dataStorage}>
+      <FirebaseConnect />
       <App />
     </Provider>
   </React.StrictMode>

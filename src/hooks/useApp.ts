@@ -5,16 +5,18 @@
 import { useEffect, useMemo, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 
-import { collection, query, onSnapshot, startAt, endAt, orderBy, QueryOrderByConstraint, OrderByDirection, limit } from 'firebase/firestore'
+import { collection, query, onSnapshot, startAt, endAt, orderBy, QueryOrderByConstraint, OrderByDirection, limit, where, QueryNonFilterConstraint, QueryConstraint, QueryConstraintType } from 'firebase/firestore'
 
 
 /////////////////////////////////////////////
 // Application's
 
-import { db } from '../firebase/firebaseConfig'
+import { db } from '../firebase/config'
 import { XTSObject } from '../data-objects/types-common'
 import { getXTSClass } from '../data-objects/common-use'
 import { getXTSSlice } from '../data-storage/xts-mappings'
+import { RootState } from '../data-storage'
+import { Unsubscribe } from '@reduxjs/toolkit'
 
 // import { actions as actions_Current } from '../data-storage/slice-current'
 // import { MIN_SEARCH_LENGTH, PAGE_ITEMS } from '../commons/constants'
@@ -44,15 +46,21 @@ export interface UseAppDataObjectsParams {
 export function useAppDataObjects(params: UseAppDataObjectsParams) {
 
     const dispatch = useDispatch()
+    const { idToken } = useSelector(((state: RootState) => state.session))
     const _orderByDirection = (params.orderByDirection === 'desc') && 'desc' || 'asc'
-
     useEffect(() => {
 
+        const queryConstraint: QueryConstraint[] = []
+        queryConstraint.push(limit(params.limit))
+        queryConstraint.push(orderBy(params.orderBy, _orderByDirection))
+        // if (!accessToken) {
+        //     queryConstraint.push(where('company.id', '==', ''))
+        // }
+
+        // const q = query(_collection, _limit, _orderBy, _where)
         const q = query(
             collection(db, params.collectionName),
-            limit(params.limit),
-            orderBy(params.orderBy, _orderByDirection)
-        )
+            ...queryConstraint)
 
         // const unsubscribe = onSnapshot(q, (querySnapshot) => {
         //     const itemsList: Item[] = [];
@@ -67,34 +75,43 @@ export function useAppDataObjects(params: UseAppDataObjectsParams) {
 
         const { sliceName, apiRequest, actions } = getXTSSlice(params.dataType)
 
-        const unsubscribe = onSnapshot(q, (snapshot) => {
-            if (snapshot.metadata.hasPendingWrites) {
-                console.log("Local change, not yet synced to server.")
-            } else {
-                //   console.log("Change from server.")
-                const updatableItems: XTSObject[] = []
-                const removeableItems: XTSObject[] = []
-                snapshot.docChanges().forEach((change) => {
-                    if (change.type === 'added') {
-                        updatableItems.push(change.doc.data() as XTSObject)
-                    } else if (change.type === 'modified') {
-                        // updatableItems.push({ id: change.doc.id, ...change.doc.data() })
-                        updatableItems.push(change.doc.data() as XTSObject)
-                    } else if (change.type === 'removed') {
-                        // itemsList.push({ id: change.doc.id, ...change.doc.data() })
-                        updatableItems.push(change.doc.data() as XTSObject)
+        let unsubscribe: Unsubscribe | undefined = undefined
+        if (idToken) {
+            unsubscribe = onSnapshot(q, (snapshot) => {
+                if (snapshot.metadata.hasPendingWrites) {
+                    console.log("Local change, not yet synced to server.")
+                } else {
+                    //   console.log("Change from server.")
+                    const updateableItems: XTSObject[] = []
+                    const removeableItems: XTSObject[] = []
+                    snapshot.docChanges().forEach((change) => {
+                        if (change.type === 'added') {
+                            updateableItems.push(change.doc.data() as XTSObject)
+                        } else if (change.type === 'modified') {
+                            // updateableItems.push({ id: change.doc.id, ...change.doc.data() })
+                            updateableItems.push(change.doc.data() as XTSObject)
+                        } else if (change.type === 'removed') {
+                            // itemsList.push({ id: change.doc.id, ...change.doc.data() })
+                            removeableItems.push(change.doc.data() as XTSObject)
+                        }
+                        // console.log('change.doc.data()', change.doc.data())
+                        // console.log('accessToken:', accessToken)
+                    })
+                    if (updateableItems.length > 0) {
+                        dispatch(actions.update(updateableItems))
                     }
-                })
-                dispatch(actions.update(updatableItems))
-                dispatch(actions.remove(removeableItems))
-            }
-        })
+                    if (removeableItems.length > 0) {
+                        dispatch(actions.remove(removeableItems))
+                    }
+                }
+            })
+        }
 
         // Cleanup when component unmount
         return () => {
-            if (unsubscribe) {
+            if (unsubscribe !== undefined) {
                 unsubscribe()
             }
         }
-    }, [params.limit])
+    }, [params.limit, idToken])
 }
